@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: rgb(48, 43, 43);
+  color: white;
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
