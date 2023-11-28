@@ -14,6 +14,11 @@
  "first_name": "Batman",
  "last_name": "Richer",
  "phone_number": "0999999999"
+ },
+ {
+ "first_name": "Superman",
+ "last_name": "I am Superman",
+ "phone_number": "0101010101"
  }
 
 ]

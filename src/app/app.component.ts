@@ -10,6 +10,7 @@ import { ListComponent } from './list/list.component';
 import { AboutComponent } from './about/about.component';
 import { ActionBarComponent } from './action-bar/action-bar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { EmployeeService } from './employee.service';
 
 
 
@@ -18,23 +19,24 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [CommonModule, RouterOutlet, ActionBarComponent, MaxMinComponent, InsertComponent,
-      EditComponent, ListComponent, AboutComponent, NgbAlert, RouterLink, RouterLinkActive,
-      HttpClientModule,ReactiveFormsModule,FormsModule]
+    imports: [CommonModule, RouterOutlet,FormsModule, NgbAlert, RouterLink, RouterLinkActive,
+      HttpClientModule, ReactiveFormsModule,FormsModule, ActionBarComponent, MaxMinComponent, InsertComponent,
+      EditComponent, ListComponent, AboutComponent ],
+      providers: [EmployeeService],
 })
 export class AppComponent {
 
   title = 'first-app';
-  value = 0;
+  // value = 0;
 
 constructor(private router: Router) { }
-  cal(value: string){
-    const buffet = Number(value)
-    this.value = buffet*3/4
-  }
-  testNumberChange(value: number){
-    console.log("test:", value);
-   }
+  // cal(value: string){
+  //   const buffet = Number(value)
+  //   this.value = buffet*3/4
+  // }
+  // testNumberChange(value: number){
+  //   console.log("test:", value);
+  //  }
 
     gotoInsert() {
     this.router.navigate(['/insert']);
