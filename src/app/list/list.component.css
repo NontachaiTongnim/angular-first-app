@@ -1,5 +1,16 @@
 th, td {
-  border: 1px solid #ddd;
   padding: 8px;
 }
-tr:nth-child(even) {background-color: #d13939;}
+tr:nth-child(even) {background-color: #e06f53;}
+.form_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e06f53;
+  height: auto;
+  width: auto;
+  border: 3px solid #264143;
+  border-radius: 25px;
+  box-shadow: 3px 4px 0px 1px #E99F4C;
+}

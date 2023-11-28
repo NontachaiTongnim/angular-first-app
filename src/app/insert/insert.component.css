@@ -13,19 +13,19 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #EDDCD9;
+  background-color: #e06f53;
   height: auto;
   width: auto;
-  border: 2px solid #264143;
-  border-radius: 20px;
+  border: 3px solid #264143;
+  border-radius: 25px;
   box-shadow: 3px 4px 0px 1px #E99F4C;
 }
 
 .title {
   color: #264143;
-  font-weight: 900;
+  font-weight: 800;
   font-size: 1.5em;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .sub_title {
@@ -45,9 +45,9 @@
   border: 2px solid #264143;
   box-shadow: 3px 4px 0px 1px #E99F4C;
   width: 290px;
-  padding: 12px 10px;
+  padding: 10px 10px;
   border-radius: 4px;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .form_style:focus, .btn:focus {
