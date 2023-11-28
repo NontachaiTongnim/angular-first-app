@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import * as data from '../insert/employee.json';
 @Component({
   selector: 'app-edit',
   standalone: true,
@@ -9,5 +9,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './edit.component.css'
 })
 export class EditComponent {
-
+ employee: any = (data as any).default;
 }

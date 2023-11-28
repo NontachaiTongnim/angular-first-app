@@ -2,7 +2,6 @@
   <table aria-hidden="true">
     <thead>
       <tr>
-        <th scope="col">#</th>
         <th scope="col">Firstname</th>
         <th scope="col">Lastname</th>
         <th scope="col">Number</th>
@@ -10,31 +9,16 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>One</td>
+      <tr *ngFor="let n of employee">
         <td>
-          <button class="comic-button2">Edit</button>
-          <button class="comic-button">Delete</button>
+          {{ n.first_name }}
         </td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>Two</td>
         <td>
-          <button class="comic-button2">Edit</button>
-          <button class="comic-button">Delete</button>
+          {{ n.last_name }}
         </td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>Three</td>
+        <td>
+          {{ n.phone_number }}
+        </td>
         <td>
           <button class="comic-button2">Edit</button>
           <button class="comic-button">Delete</button>

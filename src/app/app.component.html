@@ -16,11 +16,13 @@
         />
         <span class="slider"></span>
       </label>
-
+      <br />
       <div>
+        <input type="checkbox" id="nav" /><label for="nav"></label>
+
         <ul>
           <li>
-            <a class="navbar-brand" href="#"><h2>Home</h2></a>
+            <a href="#" class="nav-link"><h2>Home</h2></a>
           </li>
           <li>
             <a routerLink="/list" class="nav-link" routerLinkActive="active"
@@ -28,9 +30,7 @@
             >
           </li>
           <li>
-            <a routerLink="/insert" class="nav-link" routerLinkActive="active"
-              >Insert</a
-            >
+            <a (click)="gotoInsert()">Insert</a>
           </li>
           <li>
             <a routerLink="/edit" routerLinkActive="active" class="nav-link"

@@ -55,7 +55,7 @@ th, td {
 
   padding: 8px;
 }
-tr:nth-child(even) {background-color: #e06f53;}
+
 
 .form_area {
   display: flex;

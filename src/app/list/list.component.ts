@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import * as data from '../insert/employee.json';
 
 
 @Component({
@@ -11,4 +12,5 @@ import { CommonModule } from '@angular/common';
 })
 export class ListComponent {
 
+  employee: any = (data as any).default;
 }

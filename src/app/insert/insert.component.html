@@ -1,13 +1,13 @@
 <div class="form_area">
   <p class="title">ADD EMPLOYEE</p>
-  <form action="">
+  <form action="/gettingdata" method="post">
     <div class="form_group">
       <label class="sub_title">Firstname</label>
       <input
         placeholder="Enter Firstname"
         class="form_style"
         type="text"
-        formControlName="first_name"
+        name="first_name"
       />
     </div>
     <div class="form_group">
@@ -16,7 +16,7 @@
         placeholder="Enter Lastname"
         class="form_style"
         type="text"
-        formControlName="last_name"
+        name="last_name"
       />
     </div>
     <div class="form_group">
@@ -25,11 +25,38 @@
         placeholder="Enter Number"
         class="form_style"
         type="text"
-        formControlName="num"
+        name="num"
       />
     </div>
     <div>
-      <button class="btn">ADD</button>
+      <button class="btn" type="submit" value="submit">ADD</button>
     </div>
   </form>
 </div>
+
+<script>
+  var express = require("express");
+  var app = express();
+
+  //jade --> ejs -->html
+  app.engine("html", require("ejs").renderFile);
+  app.set("views", path.join(__dirname, "views"));
+  app.set("view engine", "html");
+
+  var jsonfile = require("jsonfile");
+  var file = "./employee.json";
+
+  //trying to write via form to json
+  app.post("/gettingdata", function (req, res) {
+    var user_id = req.body.first_name;
+    var token = req.body.last_name;
+    var geo = req.body.num;
+
+    //start writing
+    var obj = { first_name: user_id, last_name: token, phone_number: geo };
+    jsonfile.writeFileSync(file, obj, { flag: "a" });
+
+    //default
+    //res.send(user_id + ' ' + token + ' ' + geo);
+  });
+</script>

@@ -5,13 +5,15 @@ import { ListComponent } from './list/list.component';
 import { EditComponent } from './edit/edit.component';
 import { AboutComponent } from './about/about.component';
 import { ActionBarComponent } from './action-bar/action-bar.component';
+import { AddActionComponent } from './add-action/add-action.component';
 
 
 
 
 export const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'list'},
+  { path: '', pathMatch: 'full', redirectTo: ''},
   { path: 'insert', component: InsertComponent},
+  { path: 'gettingdata', component: AddActionComponent},
   { path: 'list', component: ListComponent},
   { path: 'edit', component: EditComponent},
   { path: 'about', component: AboutComponent},
