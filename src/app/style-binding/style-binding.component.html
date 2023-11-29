@@ -1,0 +1,29 @@
+<div style="background-color: #6fc5ff;"
+[style.height.px]="divHeight"
+[style.width.px]="divWidth">
+</div>
+<br>
+<div class="container">
+  <div>
+    Width:
+  <button type="button" (click)="divWidth=100">100px</button>
+  <button type="button" (click)="divWidth=500">500px</button>
+  <button type="button" (click)="divWidth=1000">1000px</button>
+  </div>
+  <div>
+    Hight:
+    <button type="button" (click)="divHeight=100">100px</button>
+    <button type="button" (click)="divHeight=500">500px</button>
+    <button type="button" (click)="divHeight=1000">1000px</button>
+
+  </div>
+  <div>
+    All:
+    <button type="button" (click)="divHeight = divWidth = 100">100px</button>
+    <button type="button" (click)="divHeight = divWidth = 500">500px</button>
+    <button type="button" (click)="divHeight = divWidth =1000">1000px</button>
+
+  </div>
+
+</div>
+

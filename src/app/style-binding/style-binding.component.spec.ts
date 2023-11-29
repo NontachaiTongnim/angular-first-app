@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MaxMinComponent } from './max-min.component';
+import { StyleBindingComponent } from './style-binding.component';
 
-describe('MaxMinComponent', () => {
-  let component: MaxMinComponent;
-  let fixture: ComponentFixture<MaxMinComponent>;
+describe('StyleBindingComponent', () => {
+  let component: StyleBindingComponent;
+  let fixture: ComponentFixture<StyleBindingComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MaxMinComponent]
+      imports: [StyleBindingComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(MaxMinComponent);
+    fixture = TestBed.createComponent(StyleBindingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

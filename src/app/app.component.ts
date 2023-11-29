@@ -4,13 +4,13 @@ import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/rou
 import { NgbAlert } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { InsertComponent } from './insert/insert.component';
-import { MaxMinComponent } from './max-min/max-min.component';
 import { EditComponent } from './edit/edit.component';
 import { ListComponent } from './list/list.component';
 import { AboutComponent } from './about/about.component';
 import { ActionBarComponent } from './action-bar/action-bar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EmployeeService } from './employee.service';
+import { StyleBindingComponent } from './style-binding/style-binding.component';
 
 
 
@@ -20,8 +20,8 @@ import { EmployeeService } from './employee.service';
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
     imports: [CommonModule, RouterOutlet,FormsModule, NgbAlert, RouterLink, RouterLinkActive,
-      HttpClientModule, ReactiveFormsModule,FormsModule, ActionBarComponent, MaxMinComponent, InsertComponent,
-      EditComponent, ListComponent, AboutComponent ],
+      HttpClientModule, ReactiveFormsModule,FormsModule, ActionBarComponent, InsertComponent,
+      EditComponent, ListComponent, AboutComponent,StyleBindingComponent],
       providers: [EmployeeService],
 })
 export class AppComponent {
@@ -40,6 +40,12 @@ constructor(private router: Router) { }
 
     gotoInsert() {
     this.router.navigate(['/insert']);
+  }
+  gotoActionBar() {
+    this.router.navigate(['/action-bar']);
+  }
+  gotoStyleBinding() {
+    this.router.navigate(['/style-binding']);
   }
 
 

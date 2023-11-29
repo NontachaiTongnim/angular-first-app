@@ -1,4 +1,5 @@
-<form class="form_area" action="">
+<!--
+  <form class="form_area" action="">
   <table aria-hidden="true">
     <thead>
       <tr>
@@ -21,4 +22,9 @@
       </tr>
     </tbody>
   </table>
-</form>
+</form> -->
+
+
+<div *ngFor="let book of bookList">
+ {{book.isbn}} {{book.name}}
+</div>

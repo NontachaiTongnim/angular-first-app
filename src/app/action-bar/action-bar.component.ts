@@ -14,17 +14,21 @@ export class ActionBarComponent {
   @Input() step:number = 1
   less(){
     if(this.counter-1 >= 0){
-      this.counter = this.counter - this.step;}
-      this.numberChange.emit(this.counter);
-
+      // this.counter = this.counter - this.step;}
+      // this.numberChange.emit(this.counter);
+         this.counter = this.counter -1;
   }
+}
   more(){
     if(this.counter+1 <100){
-      this.counter= this.counter + this.step;}
-      this.numberChange.emit(this.counter);
+      // this.counter= this.counter + this.step;}
+      // this.numberChange.emit(this.counter);
+      this.counter = this.counter +1;
+
+    }
   }
 
-  @Output() numberChange = new EventEmitter();
+  // @Output() numberChange = new EventEmitter();
 
  testClick(){
   console.log("test");
