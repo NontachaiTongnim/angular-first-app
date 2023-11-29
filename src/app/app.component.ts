@@ -14,6 +14,8 @@ import { StyleBindingComponent } from './style-binding/style-binding.component';
 
 
 
+
+
 @Component({
     selector: 'app-root',
     standalone: true,
@@ -23,6 +25,7 @@ import { StyleBindingComponent } from './style-binding/style-binding.component';
       HttpClientModule, ReactiveFormsModule,FormsModule, ActionBarComponent, InsertComponent,
       EditComponent, ListComponent, AboutComponent,StyleBindingComponent],
       providers: [EmployeeService],
+
 })
 export class AppComponent {
 

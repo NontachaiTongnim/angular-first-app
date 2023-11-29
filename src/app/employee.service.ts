@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class EmployeeService {
-  private apiUrl = '../app/insert/employee.json'; // Update with your JSON file path
+  private apiUrl = 'https://www.anapioficeandfire.com/api/books'; // Update with your JSON file path
 
   constructor(private http: HttpClient) {}
 

@@ -21,4 +21,11 @@ constructor(private http: HttpClient){}
         this.bookList = response;
       })
   }
+
+  search(name: string){
+    this.http.get<Book[]>('https://www.anapioficeandfire.com/api/books?name=' + name).subscribe(
+      response=>{
+        this.bookList = response;
+      })
+  }
 }

@@ -1,23 +1,25 @@
+
+
 <form class="form_area" action="">
   <table aria-hidden="true">
     <thead>
       <tr>
-        <th scope="col">Firstname</th>
-        <th scope="col">Lastname</th>
-        <th scope="col">Number</th>
+        <th scope="col">Isbn</th>
+        <th scope="col">FullName</th>
+        <th scope="col">Country</th>
         <th scope="col">Action</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let n of employee">
+      <tr *ngFor="let book of bookList">
         <td>
-          {{ n.first_name }}
+          {{book.isbn}}
         </td>
         <td>
-          {{ n.last_name }}
+          {{ book.name }}
         </td>
         <td>
-          {{ n.phone_number }}
+          {{ book.country }}
         </td>
         <td>
           <button class="comic-button2">Edit</button>
@@ -27,3 +29,6 @@
     </tbody>
   </table>
 </form>
+
+
+
